@@ -1,0 +1,7 @@
+# Projeto de criacao de um temporizador
+- Criacao da estrutura html em conjunto com a estilizacao com css
+- Utilizacao do JS para mudancao do timer, e talvez no futuro adicao de uma tabela de tasks
+- Criacao de login para o usuario ter suas sessoes "salvas" (Node.js)
+
+# Objetivo do projeto
+- Aprofundar meu conhecimento pratico, com projetos reais !
