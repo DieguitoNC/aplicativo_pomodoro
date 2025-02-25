@@ -2,19 +2,40 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+
+    font-family: "Roboto Condensed", serif;
+    font-size: 1.0rem;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+}
+
+body{
+    background-color:rgb(234, 88, 88)
 }
 
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+
     padding-left: 10.0rem;
     padding-right: 10.0rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-
-    background-color: aqua;
 }
 
+
+button{
+    border: 0;
+    background-color:rgb(243, 142, 142);
+    height: auto;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+
+}
 .img-logo {
     display: flex;
 }
@@ -44,14 +65,16 @@ main ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.0rem;
+    gap: 1.5rem;
     list-style: none;
 }
 
 .timer {
     display: flex;
     justify-content: center;
-    margin: auto;
+    margin-top: 2.0rem;
+    margin-bottom: 2.0rem;
+    
 }
 
 .div-button {
