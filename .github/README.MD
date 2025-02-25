@@ -5,3 +5,6 @@
 
 # Objetivo do projeto
 - Aprofundar meu conhecimento pratico, com projetos reais !
+
+# Aprendizados !
+- Criar sempre uma pasta de css separada para cada atributo, com o objetivo de facilitar a manipulacao dos arquivos !
