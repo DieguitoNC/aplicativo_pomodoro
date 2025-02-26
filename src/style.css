@@ -36,6 +36,11 @@ button{
     border-radius: 0.5rem;
 
 }
+
+button:hover {
+    background-color:rgb(250, 178, 178)
+
+}
 .img-logo {
     display: flex;
 }
