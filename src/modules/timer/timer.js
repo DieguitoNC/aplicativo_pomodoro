@@ -9,7 +9,7 @@ function transformToSeconds(number) {
 }
 
 
-function stopwatch(minutes) {
+async function stopwatch(minutes) {
     let seconds = transformToSeconds(minutes)
     let min = minutes
 
@@ -17,13 +17,15 @@ function stopwatch(minutes) {
         let minTimer = Math.floor(seconds / 60)
         let secondsAtTimer = seconds % 60
 
-        
-        seconds = seconds - 1
+        await new Promise((resolve) => {
+            setTimeout(resolve, 1000)
+        })
 
+        seconds = seconds - 1
         console.log(minTimer, secondsAtTimer)
     }
 
-
+    console.log("Loop Finalizado !")
 
 
     return `Temos aqui ${min} minutos e ${seconds} segundos, ja no while temos que ${minTimer} e em segundos seria ${secondsAtTimer}`
