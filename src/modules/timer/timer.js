@@ -1,7 +1,7 @@
 // Fazer toda a regra do cronometro !
 
 
-let minutes = 60
+let minutes = 1
 
 function transformToSeconds(number) {
     let seconds = minutes * 60
@@ -18,17 +18,14 @@ async function stopwatch(minutes) {
         let secondsAtTimer = seconds % 60
 
         await new Promise((resolve) => {
-            setTimeout(resolve, 1000)
+            setTimeout(resolve, 1) // valor tem que ser 1000
         })
 
         seconds = seconds - 1
-        console.log(minTimer, secondsAtTimer)
+        console.log({minTimer, secondsAtTimer})
     }
 
     console.log("Loop Finalizado !")
-
-
-    return `Temos aqui ${min} minutos e ${seconds} segundos, ja no while temos que ${minTimer} e em segundos seria ${secondsAtTimer}`
 }
 
 
@@ -36,8 +33,7 @@ async function stopwatch(minutes) {
 
 
 
-
-console.log(stopwatch(minutes))
+stopwatch(minutes)
 
 
 
