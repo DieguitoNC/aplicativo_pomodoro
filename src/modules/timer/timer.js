@@ -1,5 +1,9 @@
 // Fazer toda a regra do cronometro !
 
+const pickMinutes = document.getElementsByClassName(".minutes")
+const pickSeconds = document.getElementsByClassName(".seconds")
+console.log(pickMinutes) // tirar dps
+console.log(pickSeconds) // tirar dps
 
 let minutes = 1
 
@@ -18,7 +22,10 @@ async function stopwatch(minutes) {
         let secondsAtTimer = seconds % 60
 
         await new Promise((resolve) => {
-            setTimeout(resolve, 1) // valor tem que ser 1000
+            setTimeout(resolve, 10) // valor tem que ser 1000
+
+            pickMinutes.innerHTML = "minTimer"
+            pickSeconds.innerHTML = "secondsAtTimer"
         })
 
         seconds = seconds - 1
